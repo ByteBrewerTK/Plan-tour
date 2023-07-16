@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.refresh-Container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    user-select: none;
+}
+.refresh-Container > div{
+    text-align: center;
+    
+}
+.refresh-heading{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+.btn-refresh{
+    font-size: 1.2rem;
+    padding: .5rem 2rem;
+    border: none;
+    background: rgb(215, 215, 215);
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.btn-refresh:hover{
+    background: rgba(0, 0, 0, 0.648);
+    color: white;
+
+}
+
+.App{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.Tours{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Tours h1{
+    margin: 2rem 0;
+}
+
+.cards{
+    width: 100%;
+    height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items:flex-start;
+}
+
+
+.card{
+    width: 350px;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px;
+    border-radius: .5rem;
+    
+}
+.card .image img{
+    width: 320px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem ;
+}
+
+.description, .read-more{
+    word-wrap: break-word;
+    display: inline;
+    font-size: .8rem;
+    color: rgb(123, 123, 123);
+}
+.read-more{
+    margin-left: .3rem;
+    color: rgb(20, 167, 230);
+    font-weight: bold;  
+    user-select: none;
+    cursor: pointer;
+    white-space:nowrap;
+}
+.btn-remove{
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.3rem;
+    border: 1px solid red;
+    background: rgb(242, 167, 167);
+    font-weight: 800;
+    border-radius: .5rem;
+    transition: all .5s ease;
+    color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.btn-remove:hover{
+    background: red;
+}
+.price{
+    color: rgb(38, 193, 38);
+    font-size: 1.2rem;
+}
