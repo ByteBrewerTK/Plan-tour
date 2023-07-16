@@ -11,7 +11,7 @@ export default function Tours({tours, removeTour}){
             </div>
 
             <div className="cards">{
-                tours.map((tour) =><Card {...tour} removeTour = {removeTour}/>)
+                tours.map((tour, key) =><Card key = {key} {...tour} removeTour = {removeTour}/>)
                 }
             </div>
         </div>
