@@ -2,7 +2,6 @@ import Card from "./Card";
 
 export default function Tours({tours, removeTour}){
 
-    // console.log(spot)
     return(
         <div className="Tours">
 
